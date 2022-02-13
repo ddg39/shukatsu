@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}ログイン{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>ログイン画面</h1>
+    <form method="POST" class="form-inline">
+    <label for="">ユーザー名</label>
+    <input type="text" name="username" class="form-control" placeholder="ユーザー名">
+    <label for="">パスワード</label>
+    <input type="password" name="password" class="form-control" placeholder="パスワード" >
+    <input type="submit" value="ログイン">
+    </form>
+    <p>ユーザー名、またはパスワードが違います</p>
+</div>
+{% endblock %}
